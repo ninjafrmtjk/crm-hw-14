@@ -8,6 +8,7 @@ public sealed class Order
     short price;
     public required int Id 
     {
+        //Commit
         get => id;
         init => id = value >= 1 ? value : throw new ArgumentOutOfRangeException(nameof(value));
     }
