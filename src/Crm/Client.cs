@@ -11,7 +11,7 @@ public sealed class Client
     short age;
     string? passportNumber;
     string? gender;
-
+    //ОЛфчпыфолпчфлы
     public required string FirstName
     {
         get => firstName ?? string.Empty;
