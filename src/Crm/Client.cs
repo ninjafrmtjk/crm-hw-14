@@ -5,6 +5,9 @@ public sealed class Client
     string? firstName;
     string? lastName;
     string? middleName;
+    string? phoneNumber;
+    string? email;
+    string? password;
     short age;
     string? passportNumber;
     string? gender;
@@ -23,6 +26,21 @@ public sealed class Client
     {
         get => middleName ?? string.Empty;
         init => middleName = value is { Length: > 0 } ? value : throw new ArgumentOutOfRangeException(nameof(value));
+    }
+    public required string PhoneNumber
+    {
+        get => phoneNumber ?? string.Empty;
+        init => phoneNumber = value is { Length: >0 } ? value : throw new ArgumentOutOfRangeException(nameof(value));
+    }
+    public required string Email 
+    {
+        get => email ?? string.Empty;
+        init => email = value is { Length: >0 } ? value : throw new ArgumentOutOfRangeException(nameof(value));
+    }
+    public required string Password 
+    {
+        get => password ?? string.Empty;
+        init => password = value is { Length: >0 } ? value : throw new ArgumentOutOfRangeException(nameof(value));
     }
     public required short Age 
     { 
