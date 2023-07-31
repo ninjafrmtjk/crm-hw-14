@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/faridunwa/.nuget/packages/": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/faridunwa/Documents/crm-practice/src/Crm/Crm.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\crm-practice\\src\\Crm\\Crm.csproj",
       "projectName": "Crm",
-      "projectPath": "/Users/faridunwa/Documents/crm-practice/src/Crm/Crm.csproj",
-      "packagesPath": "/Users/faridunwa/.nuget/packages/",
-      "outputPath": "/Users/faridunwa/Documents/crm-practice/src/Crm/obj/",
+      "projectPath": "C:\\Users\\user\\Documents\\crm-practice\\src\\Crm\\Crm.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Documents\\crm-practice\\src\\Crm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/faridunwa/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }

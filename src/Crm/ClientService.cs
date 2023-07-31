@@ -2,16 +2,25 @@ using Crm;
 
 public sealed class ClientService
 {
-    public Client CreateClient(ClientInfo clientInfo)
+    private List<Client> clients;
+    public ClientService()
     {
-        return new()
-        {
-            FirstName = clientInfo.FirstName,
-            LastName = clientInfo.LastName,
-            MiddleName = clientInfo.MiddleName,
-            Age = clientInfo.Age,
-            PassportNumber = clientInfo.PassportNumber,
-            Gender = clientInfo.Gender
-        };
+        clients = new List<Client>();
+    }
+    public Client CreateClient(
+        string firstName,
+        string lastName,
+        string middleName,
+        string phoneNumber,
+        string email,
+        string password,
+        short age,
+        string passportNumber,
+        string gender
+    )
+    {
+        Client newClient = new();
+        clients.Add(newClient);
+        return newClient;
     }   
 }

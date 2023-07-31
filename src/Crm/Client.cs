@@ -11,7 +11,7 @@ public sealed class Client
     short age;
     string? passportNumber;
     string? gender;
-    //ОЛфчпыфолпчфлы
+    //test
     public required string FirstName
     {
         get => firstName ?? string.Empty;
@@ -55,5 +55,28 @@ public sealed class Client
     { 
         get => gender ?? string.Empty;
         init => gender = value is { Length: > 0 } ? value : throw new ArgumentOutOfRangeException(nameof(value));
+    }
+
+    public Client(
+        string firstName,
+        string lastName,
+        string middleName,
+        string phoneNumber,
+        string email,
+        string password,
+        short age,
+        string passportNumber,
+        string gender
+    )
+    {
+        FirstName = firstName;
+        LastName = lastName;
+        MiddleName = middleName;
+        PhoneNumber = phoneNumber;
+        Email = email;
+        Password = password;
+        Age = age;
+        PassportNumber = passportNumber;
+        Gender = gender;
     }
 }

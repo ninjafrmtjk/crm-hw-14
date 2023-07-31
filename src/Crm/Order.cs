@@ -2,7 +2,6 @@ namespace Crm;
 
 public sealed class Order
 {
-    //Hello
     int id;
     string? name;
     string? color;

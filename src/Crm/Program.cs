@@ -14,7 +14,7 @@ void CreateClient()
     string passportNumber = Console.ReadLine();
     string gender = Console.ReadLine();
 
-    Client newClient = clientService.CreateClient(new ClientInfo() {
+    Client newClient = clientService.CreateClient(new() {
         FirstName = firstName,
         LastName = lastName,
         MiddleName = middleName,
@@ -33,13 +33,13 @@ void CreateOrder()
 {
     string name = Console.ReadLine();
     string color = Console.ReadLine();
-    string id = Console.ReadLine();
+    int id = int.Parse(Console.ReadLine());
     short price = short.Parse(Console.ReadLine());
 
     Order newOrder = orderService.CreateOrder(new OrderInfo() {
         Name = name,
         Color = color,
-        ID = id,
+        Id = id,
         Price = price
     });
 
