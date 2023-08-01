@@ -1,5 +1,4 @@
 ﻿using Crm;
-
 ClientService clientService = new();
 CreateClient();
 OrderService orderService = new();
@@ -37,14 +36,14 @@ void CreateOrder()
     short price = short.Parse(Console.ReadLine());
 
     Order newOrder = orderService.CreateOrder(new OrderInfo() {
+        Id = id,
         Name = name,
         Color = color,
-        Id = id,
         Price = price
     });
 
+    Console.WriteLine("ID: {0}", id);
     Console.WriteLine("Name: {0}", name);
     Console.WriteLine("Color: {0}", color);
-    Console.WriteLine("ID: {0}", id);
     Console.WriteLine("Price: {0}", price);
 }

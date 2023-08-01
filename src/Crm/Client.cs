@@ -15,7 +15,7 @@ public sealed class Client
     public required string FirstName
     {
         get => firstName ?? string.Empty;
-        init => firstName = value is { Length: > 0 } ? value : throw new ArgumentOutOfRangeException(nameof(value));
+        set => firstName = value is { Length: > 0 } ? value : throw new ArgumentOutOfRangeException(nameof(value));
     }
     public string LastName 
     { 
@@ -78,5 +78,9 @@ public sealed class Client
         Age = age;
         PassportNumber = passportNumber;
         Gender = gender;
+    }
+
+    public Client()
+    {
     }
 }
