@@ -72,6 +72,12 @@ public sealed class ClientService : IClientService
         return null;
     }
 
+    public void ChangeClientName(Client client, string newFirstName, string newLastName)
+    {
+        client.FirstName = newFirstName;
+        client.LastName = newLastName;
+    }
+
     internal Client CreateClient(string? firstName, string? lastName, string? middleName, short age, string? passportNumber, string? gender)
     {
         throw new NotImplementedException();

@@ -1,7 +1,7 @@
 ﻿using Crm;
 
 Console.WriteLine("Choose operation: 1 - Create client, 2 - Create Order,");
-Console.Write("Found client - 3, Delete client - 4, Break operation - 0: ");
+Console.Write("3 - Found client, 4 - Delete client, 0 - Break operation: ");
 short s = short.Parse(Console.ReadLine());
 
 IClientService clientService = new ClientService();
@@ -71,13 +71,12 @@ void CreateOrder()
     int id = int.Parse(Console.ReadLine());
     short price = short.Parse(Console.ReadLine());
 
-    Order newOrder = orderService.CreateOrder(new OrderInfo()
-    {
-        Id = id,
-        Name = name,
-        Color = color,
-        Price = price
-    });
+    // Order newOrder = orderService.CreateOrder(
+    //     Id = id,
+    //     Name = name,
+    //     Color = color,
+    //     Price = price
+    // );
 
     Console.WriteLine("ID: {0}", id);
     Console.WriteLine("Name: {0}", name);

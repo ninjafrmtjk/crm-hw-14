@@ -6,9 +6,9 @@ public sealed class Order
     string? name;
     string? color;
     short price;
+    string? description;
     public required int Id 
     {
-        //Test Pull Request
         get => id;
         init => id = value >= 1 ? value : throw new ArgumentOutOfRangeException(nameof(value));
     }
@@ -23,4 +23,10 @@ public sealed class Order
         init => color = value is { Length: > 0 } ? value : throw new ArgumentOutOfRangeException(nameof(value));
     }
     public short Price { get; init; }
+
+    public string Description 
+    {
+        get => description ?? string.Empty;
+        set => description = value is { Length: > 0 } ? value : throw new ArgumentOutOfRangeException(nameof(value));
+    }
 }
