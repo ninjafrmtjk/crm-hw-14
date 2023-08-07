@@ -55,7 +55,6 @@ public sealed class ClientService : IClientService
     }
 
     
-
     internal Client CreateClient(string? firstName, string? lastName, string? middleName, short age, string? passportNumber, string? gender)
     {
         throw new NotImplementedException();

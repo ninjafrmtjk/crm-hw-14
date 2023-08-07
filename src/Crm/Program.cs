@@ -20,11 +20,6 @@ switch (s)
         string lastName = Console.ReadLine();
         clientService.GetClient(firstName, lastName);
         break;
-    // case 4:
-    //     string firstName1 = Console.ReadLine();
-    //     string lastName1 = Console.ReadLine();
-    //     clientService.DeleteClient(firstName1, lastName1);
-    //     break;
     case 0:
         Console.WriteLine("Breaking operation...");
         break;
