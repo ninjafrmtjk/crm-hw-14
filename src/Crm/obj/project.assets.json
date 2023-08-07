@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\crm-practice\\src\\Crm\\Crm.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\crm-practice.lastVer\\src\\Crm\\Crm.csproj",
       "projectName": "Crm",
-      "projectPath": "C:\\Users\\user\\Documents\\crm-practice\\src\\Crm\\Crm.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\crm-practice\\src\\Crm\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Documents\\crm-practice.lastVer\\src\\Crm\\Crm.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\crm-practice.lastVer\\src\\Crm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
