@@ -16,5 +16,5 @@ public interface IClientService
     );
 
     public Client? GetClient(string name, string surname);
-    //public Client? DeleteClient(string name, string surname);
+    public Client? DeleteClient(string name, string surname);
 }

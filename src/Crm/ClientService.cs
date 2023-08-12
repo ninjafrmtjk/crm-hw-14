@@ -54,7 +54,29 @@ public sealed class ClientService : IClientService
         return null;
     }
 
-    
+    public Client? DeleteClient(string name, string surname)
+    {
+        if (name is not { Length: > 0 })
+            throw new ArgumentOutOfRangeException(nameof(name));
+
+        if (surname is not { Length: > 0 })
+            throw new ArgumentOutOfRangeException(nameof(surname));
+
+        foreach (Client client in _clients)
+        {
+            _clients.RemoveAll(client => client.FirstName == name && client.LastName == surname);
+
+            Console.WriteLine(_clients);
+        }
+
+        return null;
+    }
+
+    public void ChangeClientName(Client client, string newFirstName, string newLastName)
+    {
+        client.FirstName = newFirstName;
+        client.LastName = newLastName;
+    }
 
     internal Client CreateClient(string? firstName, string? lastName, string? middleName, short age, string? passportNumber, string? gender)
     {

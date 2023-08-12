@@ -20,7 +20,7 @@ public sealed class Client
     public string LastName 
     { 
         get => lastName ?? string.Empty;
-        init => lastName = value is { Length: > 0 } ? value : throw new ArgumentOutOfRangeException(nameof(value));
+        set => lastName = value is { Length: > 0 } ? value : throw new ArgumentOutOfRangeException(nameof(value));
     }
     public string MiddleName 
     {
